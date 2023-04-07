@@ -119,7 +119,7 @@ addEventListener("DOMContentLoaded", function () {
 //load component
 function movieCardComponent(movie) {
   return `
-        <a class="h-50 w-30 rounded-3xl relative overflow-hidden" href="moviepage.html?id=${
+        <a class="h-64 w-44 rounded-3xl relative overflow-hidden" href="moviepage.html?id=${
           movie.id
         }">
         <img class="w-full object-cover h-64 rounded-3xl" src="${
@@ -134,7 +134,7 @@ function movieCardComponent(movie) {
 
 function movieWithRatingCardComponent(movie) {
   return `
-        <a class="h-50 w-30 rounded-3xl relative overflow-hidden" href="moviepage.html?id=${
+        <a class="h-64 w-44 rounded-3xl relative overflow-hidden" href="moviepage.html?id=${
           movie.id
         }">
         <img class="w-full object-cover h-64 rounded-3xl" src="${
