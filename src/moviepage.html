@@ -9,43 +9,47 @@
       crossorigin="anonymous"
     ></script>
 
-  <body class="bg-[#EBEAEA]">
-    <div class="container mx-auto min-h-screen flex ">
-        <div class="max-w-sm mx-4 my-4 md:max-w-md">
-
-          <nav>
-          <div class="flex items-center justify-between">
-            <h1 class="text-2xl text-left font-bold mb-5 leading-loose"><a id="home_button" href="homepage.html">
-            The <br />Movie<br />
-              Watchlist
-            </a>
-            </h1>
-            <div class="flex mx-4">
-              <div id="search-input"
-              class="hidden md:block flex-1 px-2 py-1 rounded-full border-2 border-gray-300 bg-gray-300"
-         >
-           <input type="text" placeholder="Search" class="w-full outline-none bg-transparent">
-         </div>
-         
-         <div id="search-icon"
-              class="md:hidden flex items-center justify-center mx-4 h-9 w-9 rounded-full border-2 border-gray-300 bg-gray-300"
-         >
-           <i class="fa-solid fa-magnifying-glass"></i>
-         </div>
-            <a
-              href="watchlistpage.html" class="flex items-center justify-center h-9 w-9 rounded-full border-2 border-gray-300 bg-gray-300"
-            >
-              <i class="fa-solid fa-bookmark"></i>
+    <body class="bg-[#EBEAEA] mx-24 max-[390px]:mx-2">
+      <header
+        class="flex flex-wrap justify-between my-12 items-start max-[390px]:items-center"
+      >
+        <div>
+          <a
+            class="home-button text-4xl text-left leading-normal font-bold"
+            href="homepage.html"
+          >
+            <h1>The<br />Movie<br />Watchlist</h1>
           </a>
-          </div>
-          </div>
-        </nav>
-
-
-          <main id="movie-detail-id"></main>
         </div>
-      </div>
-    </div>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="🔍 Search a movie or a series"
+          class="w-96 px-2 py-2 mb-2 bg-gray-300 rounded-2xl text-center font-medium placeholder-gray-900 focus:placeholder-gray-600 max-[390px]:hidden"
+        />
+        <button
+      type="text"
+      id="search-button"
+      class="hidden w-10 px-2 py-2 mb-2 bg-gray-300 rounded-full text-center font-medium placeholder-gray-900 focus:placeholder-gray-600 max-[390px]:block">🔍
+    </button>
+        <a
+          class="watchlist-button w-40 px-2 py-2 mb-2 bg-gray-300 rounded-2xl text-center font-bold max-[390px]:hidden"
+          href="watchlistpage.html"
+        >
+          <div>
+            <p><i class="fa-regular fa-bookmark"></i> Watchlist</p>
+          </div>
+        </a>
+        <a
+          class="hidden watchlist-button w-10 px-2 py-2 mb-2 bg-gray-300 rounded-2xl text-center font-bold max-[390px]:block"
+          href="watchlistpage.html"
+        >
+          <div>
+            <p><i class="fa-regular fa-bookmark"></i></p>
+          </div>
+        </a>
+      </header>
+      <main id="movie-detail-id"></main>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
